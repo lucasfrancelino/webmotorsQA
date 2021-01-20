@@ -1,0 +1,11 @@
+---
+default: -p bdd -p html -p chrome --publish
+html: --format html --out=logs/report.html
+# formato da informação no log:
+dot: --format progress
+bdd: --format pretty
+# # navegadores:
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+chrome_headless: BROWSER=chrome_headless
+headless: HEADLESS=phantomjs
